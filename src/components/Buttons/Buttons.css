@@ -1,0 +1,9 @@
+.feedback__btns {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  cursor: pointer;
+}

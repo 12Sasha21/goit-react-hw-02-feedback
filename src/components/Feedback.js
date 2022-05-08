@@ -1,5 +1,5 @@
 import React from 'react';
-import Buttons from './Buttons/Buttons';
+import Buttons from './Feedback/Feedback';
 import Statistics from './Statistics/Statistics';
 import './Feedback.css';
 

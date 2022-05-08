@@ -19,3 +19,8 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}

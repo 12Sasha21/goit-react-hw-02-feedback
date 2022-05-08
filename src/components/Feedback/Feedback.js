@@ -3,13 +3,13 @@ import './Feedback.css';
 
 const FeedbackOptions = ({ onGood, onNeutral, onBad }) => (
   <div>
-    <button type="submit" onClick={onGood}>
+    <button type="buttom" onClick={onGood}>
       Good
     </button>
-    <button type="submit" onClick={onNeutral}>
+    <button type="buttom" onClick={onNeutral}>
       Neutral
     </button>
-    <button type="submit" onClick={onBad}>
+    <button type="buttom" onClick={onBad}>
       Bad
     </button>
   </div>

@@ -1,4 +1,8 @@
-/* .title {
+.title {
   font-size: 30px;
   font-weight: bold;
-} */
+}
+
+.item {
+  font-size: 15px;
+}

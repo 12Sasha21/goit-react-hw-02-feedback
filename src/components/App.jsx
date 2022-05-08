@@ -12,29 +12,21 @@ class App extends Component {
     bad: 0,
   };
 
-  // addGoodFeedback = () => {
-  //   this.setState(prevState => ({
-  //     good: prevState.good + 1,
-  //   }));
-  // };
-
-  // addNeutralFeedback = () => {
-  //   this.setState(prevState => ({
-  //     neutral: prevState.neutral + 1,
-  //   }));
-  // };
-
-  // addBadFeedback = () => {
-  //   this.setState(prevState => ({
-  //     bad: prevState.bad + 1,
-  //   }));
-  // };
-
-  leaveFeedback = e => {
-    const targetBtn = e.target.textContent.toLowerCase();
+  addGoodFeedback = () => {
     this.setState(prevState => ({
-      ...prevState,
-      [targetBtn]: prevState[targetBtn] + 1,
+      good: prevState.good + 1,
+    }));
+  };
+
+  addNeutralFeedback = () => {
+    this.setState(prevState => ({
+      neutral: prevState.neutral + 1,
+    }));
+  };
+
+  addBadFeedback = () => {
+    this.setState(prevState => ({
+      bad: prevState.bad + 1,
     }));
   };
 
@@ -54,8 +46,9 @@ class App extends Component {
       <div className="feedback">
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={Object.keys(this.state)}
-            onLeaveFeedback={this.leaveFeedback}
+            onGood={this.addGoodFeedback}
+            onNeutral={this.addNeutralFeedback}
+            onBad={this.addBadFeedback}
           />
         </Section>
 

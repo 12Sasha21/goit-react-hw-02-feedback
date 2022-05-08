@@ -1,17 +1,17 @@
 import React from 'react';
 import './Feedback.css';
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => (
+const FeedbackOptions = ({ onGood, onNeutral, onBad }) => (
   <div>
-    <ul className="feedback_list">
-      {options.map(option => (
-        <li key={option} className="feedback_item">
-          <button type="submit" className="btn" onClick={onLeaveFeedback}>
-            {option[0].toUpperCase() + option.slice(1)}
-          </button>
-        </li>
-      ))}
-    </ul>
+    <button type="submit" onClick={onGood}>
+      Good
+    </button>
+    <button type="submit" onClick={onNeutral}>
+      Neutral
+    </button>
+    <button type="submit" onClick={onBad}>
+      Bad
+    </button>
   </div>
 );
 

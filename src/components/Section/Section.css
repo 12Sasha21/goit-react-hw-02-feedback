@@ -1,8 +1,10 @@
 .title {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .item {
   font-size: 15px;
+  font-weight: normal;
 }

@@ -1,11 +1,6 @@
-.feedback_list {
-  width: 200px;
-  display: flex;
-  justify-content: space-around;
-}
-
-button {
+.button {
   cursor: pointer;
   padding: 5px 10px;
   margin-right: 5px;
+  margin-top: 10px;
 }

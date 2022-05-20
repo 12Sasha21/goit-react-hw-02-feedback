@@ -39,7 +39,7 @@ export default function App() {
 
   useEffect(() => {
     setPositivePercentage(Math.round((100 / total) * good));
-  }, [total]);
+  }, [total, good]);
 
   return (
     <div className="feedback">
